@@ -308,3 +308,6 @@ Resources/MapImages
 .direnv/
 .idea/
 /Resources/Textures/_Starlight/Logo/CClogo - Copy.png
+/Content.Shared/_Starlight/Antags/Signaleer/Components/AbductorEnums.cs
+/Content.Shared/_Starlight/Antags/Signaleer/Components
+/Content.Shared/_Starlight/Antags/Signaleer

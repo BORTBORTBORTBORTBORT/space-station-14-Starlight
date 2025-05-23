@@ -1,0 +1,13 @@
+
+- type: entity
+  parent: [ClothingOuterArmorWarden, ClothingOuterWinterCoatToggleable, BaseSecurityContraband]
+  id: ClothingCentComWintercoat
+  name: CSD 's armored winter coat
+  description: An armoured wintercoat used by CentComm Security Divisions Officers.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Clothing/OuterClothing/Coats/centcomedarmouredcoat.rsi
+  - type: Clothing
+    sprite: _Starlight/Clothing/OuterClothing/Coats/centcomedarmouredcoat.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodWinterWarden
