@@ -140,8 +140,11 @@
     - back
   - type: DisarmMalus
   - type: Scalpel
+  - type: Hemostat
+  - type: Retractor
+  - type: BoneSaw
   - type: SurgeryTool
-    successRate: 0.6
+    successRate: 1
     startSound:
       path: /Audio/_Starlight/Medical/Surgery/scalpel1.ogg
     endSound:

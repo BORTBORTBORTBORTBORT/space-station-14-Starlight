@@ -28,6 +28,9 @@
   id: Felionoid
   
 - type: Tag
+  id: Highlander
+
+- type: Tag
   id: LightRifleHeavy
   
 - type: Tag
@@ -89,3 +92,4 @@
 
 - type: Tag
   id: DockEscape
+

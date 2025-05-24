@@ -72,3 +72,11 @@
   requiredTags: 
   - Resomi
   #- Avali #Add avali here later
+
+- type: collectiveMind
+  id: Quickening
+  name: Quickening
+  keycode: 'o'
+  color: "#ADD8E6"
+  requiredComponents:
+  - Highlander
