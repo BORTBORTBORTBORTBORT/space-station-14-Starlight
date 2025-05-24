@@ -1,0 +1,10 @@
+- type: entity
+  parent: ClothingShoesBaseButcherable
+  id: ClothingShoesBootsBrogues
+  name: Brogues
+  description: The Brown Brogues of a true Highlander
+  components:
+  - type: Sprite
+    sprite: _Starlight/Clothing/Shoes/Boots/Brogues.rsi
+  - type: Clothing
+    sprite: _Starlight/Clothing/Shoes/Boots/Brogues.rsi

@@ -1,0 +1,10 @@
+- type: startingGear
+  id: HighlanderGear
+  equipment:
+    
+    jumpsuit: ClothingUniformJumpsuitHighlander
+    back: Claymore
+    shoes: ClothingShoesBootsBrogues
+    Head: ClothingHeadHatsBeret
+
+

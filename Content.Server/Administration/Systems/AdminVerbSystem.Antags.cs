@@ -42,6 +42,9 @@ public sealed partial class AdminVerbSystem
     [ValidatePrototypeId<StartingGearPrototype>]
     private const string PirateGearId = "PirateGear";
 
+    [ValidatePrototypeId<EntityPrototype>]
+    private const string HighlanderGearId = "HighlanderGear";
+
     private readonly EntProtoId _paradoxCloneRuleId = "ParadoxCloneSpawn";
 
     // All antag verbs have names so invokeverb works.
@@ -135,6 +138,22 @@ public sealed partial class AdminVerbSystem
             Message = string.Join(": ", pirateName, Loc.GetString("admin-verb-make-pirate")),
         };
         args.Verbs.Add(pirate);
+
+        var highlanderName = Loc.GetString("admin-verb-text-make-Highlander");
+        Verb Highlander = new()
+        {
+            Text = highlanderName,
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new("_Starlight/Clothing/Uniforms/Jumpsuit/Highlander.rsi"), "icon"),
+            Act = () =>
+            {
+                // For now Highlanders just get an outfit because they don't really have logic associated with them YET
+                SetOutfitCommand.SetOutfit(args.Target, HighlanderGearId, EntityManager);
+            },
+            Impact = LogImpact.High,
+            Message = string.Join(": ", highlanderName, Loc.GetString("admin-verb-make-Highlander")),
+        };
+        args.Verbs.Add(Highlander);
 
         var headRevName = Loc.GetString("admin-verb-text-make-head-rev");
         Verb headRev = new()
