@@ -102,6 +102,17 @@
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/corpsman.rsi
   - type: Clothing
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/corpsman.rsi 
+    
+- type: entity
+  parent: ClothingUniformBase
+  id: ClothingHighlander
+  name: Highlanders Kilt
+  description: Functional AND dashing, a highlanders claes.
+  components:
+  - type: Sprite
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/Highlander.rsi
+  - type: Clothing
+    sprite: _Starlight/Clothing/Uniforms/Jumpsuit/Highlander.rsi 
 
 # Fashion-O-Mat, not obtainable any other way, unless mapped
 
