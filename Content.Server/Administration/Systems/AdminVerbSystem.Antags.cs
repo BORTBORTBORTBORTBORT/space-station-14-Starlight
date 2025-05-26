@@ -7,6 +7,7 @@ using Content.Shared.Administration;
 using Content.Shared.Database;
 using Content.Shared.Humanoid;
 using Content.Shared.Mind.Components;
+using Content.Shared.Highlander;
 using Content.Shared.Roles;
 using Content.Shared.Verbs;
 using Robust.Shared.Player;
@@ -149,10 +150,20 @@ public sealed partial class AdminVerbSystem
             {
                 // For now Highlanders just get an outfit because they don't really have logic associated with them YET
                 SetOutfitCommand.SetOutfit(args.Target, HighlanderGearId, EntityManager);
+                if (HasComp<MindContainerComponent>(args.Target))
+                {
+                    EnsureComp<HighlanderComponent>(args.Target);
+                }
+
+                
+
             },
             Impact = LogImpact.High,
             Message = string.Join(": ", highlanderName, Loc.GetString("admin-verb-make-Highlander")),
-        };
+
+            
+            
+    };
         args.Verbs.Add(Highlander);
 
         var headRevName = Loc.GetString("admin-verb-text-make-head-rev");

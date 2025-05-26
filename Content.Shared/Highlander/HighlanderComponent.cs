@@ -1,8 +1,8 @@
-﻿using Content.Shared.Damage;
+using Content.Shared.Damage;
 using Content.Shared.Interaction.Events;
 using Robust.Shared.GameStates;
 
-namespace Content.Shared.Highlander;
+namespace Content.Shared.Highlander.Components;
 
 
 [RegisterComponent, NetworkedComponent]
