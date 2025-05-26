@@ -352,6 +352,32 @@
       mindRoles:
       - MindRoleInitialInfected
 
+- type: entity
+  id: Highlander
+  parent: BaseGameRule
+  components:
+  - type: GameRule
+    minPlayers: 80
+  - type: HighlanderRule
+  - type: AntagSelection
+    selectionTime: IntraPlayerSpawn
+    definitions:
+    - startingGear: HighlanderGear
+    - prefRoles: [ Highlander ]
+      max: 6
+      playerRatio: 10
+      blacklist:
+        components:
+        - ZombieImmune
+        - AntagImmune
+      briefing:
+        text: Highlander-role-greeting
+        color: 7DF9FF
+        sound: "/Audio/Ambience/Antag/Thunder_start.ogg"
+      components:
+      - type: Highlander
+
+
 # This rule makes the chosen players unable to get other antag rules, as a way to prevent metagaming job rolls.
 # Put this before antags assigned to station jobs, but after non-job antags (NukeOps/Wiz).
 - type: entity

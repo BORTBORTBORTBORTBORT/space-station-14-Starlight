@@ -44,7 +44,7 @@ public sealed partial class AdminVerbSystem
     private const string PirateGearId = "PirateGear";
 
     [ValidatePrototypeId<EntityPrototype>]
-    private const string HighlanderGearId = "HighlanderGear";
+    private const string DefaultHighlanderRule = "Highlander";
 
     private readonly EntProtoId _paradoxCloneRuleId = "ParadoxCloneSpawn";
 
@@ -148,21 +148,11 @@ public sealed partial class AdminVerbSystem
             Icon = new SpriteSpecifier.Rsi(new("_Starlight/Clothing/Uniforms/Jumpsuit/Highlander.rsi"), "icon"),
             Act = () =>
             {
-                // For now Highlanders just get an outfit because they don't really have logic associated with them YET
-                SetOutfitCommand.SetOutfit(args.Target, HighlanderGearId, EntityManager);
-                if (HasComp<MindContainerComponent>(args.Target))
-                {
-                    EnsureComp<HighlanderComponent>(args.Target);
-                }
-
-                
-
+                _antag.ForceMakeAntag<HighlanderRuleComponent>(targetPlayer, DefaultHighlanderRule);
             },
             Impact = LogImpact.High,
             Message = string.Join(": ", highlanderName, Loc.GetString("admin-verb-make-Highlander")),
 
-            
-            
     };
         args.Verbs.Add(Highlander);
 

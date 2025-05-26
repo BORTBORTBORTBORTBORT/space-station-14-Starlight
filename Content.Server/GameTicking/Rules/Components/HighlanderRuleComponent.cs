@@ -1,6 +1,6 @@
 using Content.Shared.NPC.Prototypes;
 using Content.Shared.Roles;
-using Content.Server.Highlander.Components;
+using Content.Server.Highlander;
 using Robust.Shared.Audio;
 using Robust.Shared.Prototypes;
 

@@ -4,13 +4,16 @@ using Content.Shared.CCVar;
 using Content.Shared.Mind;
 using Content.Shared.Objectives.Components;
 using Robust.Shared.Configuration;
+using Content.Shared.Highlander.Components;
+using Content.Shared.Highlander;
+using Content.Server.Highlander;
 
 namespace Content.Server.Objectives.Systems;
 
 /// <summary>
 /// Handles kill person condition logic and picking random kill targets.
 /// </summary>
-public sealed class KillPersonConditionSystem : EntitySystem
+public sealed class HighlanderConditionSystem : EntitySystem
 {
     [Dependency] private readonly EmergencyShuttleSystem _emergencyShuttle = default!;
     [Dependency] private readonly IConfigurationManager _config = default!;
@@ -21,10 +24,10 @@ public sealed class KillPersonConditionSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<KillPersonConditionComponent, ObjectiveGetProgressEvent>(OnGetProgress);
+        SubscribeLocalEvent<HighlanderConditionComponent, ObjectiveGetProgressEvent>(OnGetProgress);
     }
 
-    private void OnGetProgress(EntityUid uid, KillPersonConditionComponent comp, ref ObjectiveGetProgressEvent args)
+    private void OnGetProgress(EntityUid uid, HighlanderConditionComponent comp, ref ObjectiveGetProgressEvent args)
     {
         if (!_target.GetTarget(uid, out var target))
             return;
@@ -34,6 +37,12 @@ public sealed class KillPersonConditionSystem : EntitySystem
 
     private float GetProgress(EntityUid target, bool requireDead)
     {
+        var query = EntityQueryEnumerator<HighlanderComponent>();
+        while (query.MoveNext(out var uid, out var comp))
+        {
+            // DO LOGIC HERE
+        }
+
         // deleted or gibbed or something, counts as dead
         if (!TryComp<MindComponent>(target, out var mind) || mind.OwnedEntity == null)
             return 1f;
@@ -60,5 +69,7 @@ public sealed class KillPersonConditionSystem : EntitySystem
 
         // if evac is still here and target hasn't boarded, show 50% to give you an indicator that you are doing good
         return _emergencyShuttle.EmergencyShuttleArrived ? 0.5f : 0f;
+
+
     }
 }

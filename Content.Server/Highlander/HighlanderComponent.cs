@@ -5,7 +5,7 @@ using Robust.Shared.GameStates;
 namespace Content.Shared.Highlander.Components;
 
 
-[RegisterComponent, NetworkedComponent]
+[RegisterComponent]
 public sealed partial class HighlanderComponent : Component
 {
 

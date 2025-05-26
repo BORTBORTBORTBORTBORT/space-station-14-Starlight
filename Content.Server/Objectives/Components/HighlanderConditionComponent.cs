@@ -1,5 +1,4 @@
 using Content.Server.Objectives.Systems;
-using Content.Server.Objectives.Systems;
 
 namespace Content.Server.Objectives.Components;
 
@@ -15,4 +14,5 @@ public sealed partial class HighlanderConditionComponent : Component
     /// </summary>
     [DataField, ViewVariables(VVAccess.ReadWrite)]
     public bool RequireDead = false;
+
 }
