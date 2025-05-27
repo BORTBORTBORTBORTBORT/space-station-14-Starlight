@@ -321,4 +321,13 @@
     antagPrototype: Vampire
   - type: VampireRole
 
-  
+#Highlander
+- type: entity
+  parent: BaseMindRoleAntag
+  id: MindRoleHighlander
+  name: Highlander Role
+  components:
+  - type: MindRole
+    antagPrototype: Highlander
+  - type: HighlanderRole
+ 

@@ -18,6 +18,7 @@ admin-verb-text-make-pirate = Make Pirate
 admin-verb-text-make-head-rev = Make Head Rev
 admin-verb-text-make-thief = Make Thief
 admin-verb-text-make-changeling = Make Changeling
-admin-verb-text-make-paradox-clone = Create Highlander
+admin-verb-text-make-paradox-clone = Create Paradox Clone
+admin-verb-text-make-Highlander = Create Highlander
 
 admin-overlay-antag-classic = ANTAG

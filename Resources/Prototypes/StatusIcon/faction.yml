@@ -77,3 +77,16 @@
   icon:
     sprite: /Textures/_Starlight/Interface/Misc/job_icons.rsi
     state: Vampire
+
+
+- type: factionIcon
+  id: HighlanderFaction
+  isShaded: true
+  priority: 11
+  showTo:
+    components:
+      - ShowAntagIcons
+      - HighlanderIcon
+  icon:
+    sprite: /Textures/_Starlight/Interface/Misc/job_icons.rsi
+    state: Highlander

@@ -43,45 +43,51 @@ public sealed partial class HighlanderRuleSystem : GameRuleSystem<HighlanderRule
 
     public readonly SoundSpecifier BriefingSound = new SoundPathSpecifier("/Audio/Ambience/Antag/vampire_start.ogg");
 
-    public readonly ProtoId<NpcFactionPrototype> HighlanderPrototypeId = "Highlander";
-
+    public readonly ProtoId<AntagPrototype> HighlanderPrototypeId = "Highlander";
 
     public readonly ProtoId<NpcFactionPrototype> HighlanderFactionId = "Highlander";
 
     public readonly ProtoId<NpcFactionPrototype> NanotrasenFactionId = "NanoTrasen";
 
-    [ValidatePrototypeId<EntityPrototype>]
-    private const string HighlanderGearId = "HighlanderGear";
 
 
     public override void Initialize()
     {
         base.Initialize();
-        SubscribeLocalEvent<HighlanderComponent, GetBriefingEvent>(OnGetBriefing);
+        SubscribeLocalEvent <HighlanderRoleComponent, GetBriefingEvent>(OnGetBriefing);
 
-        // SubscribeLocalEvent<HighlanderRuleComponent, AfterAntagEntitySelectedEvent>(OnSelectAntag);
+        SubscribeLocalEvent<HighlanderRuleComponent, AfterAntagEntitySelectedEvent>(OnSelectAntag);
+
     }
 
-    private void OnGetBriefing(Entity<HighlanderComponent> role, ref GetBriefingEvent args)
+    private void OnSelectAntag(EntityUid mindId, HighlanderRuleComponent comp, ref AfterAntagEntitySelectedEvent args)
     {
-        if (!_role.MindHasRole<HighlanderRoleComponent>(args.Mind.Owner))
+        MakeHighlander(args.EntityUid, comp);
+    }
+
+
+    private void OnGetBriefing(Entity<HighlanderRoleComponent> role, ref GetBriefingEvent args)
+    {
+
             args.Append(Loc.GetString("Highlander-role-greeting"));
     }
 
     public bool MakeHighlander(EntityUid target, HighlanderRuleComponent rule)
     {
+
+        EnsureComp<HighlanderComponent>(target);
+        EnsureComp<HighlanderIconComponent>(target);
+
         if (!_mind.TryGetMind(target, out var mindId, out var mind))
             return false;
 
-        EnsureComp<HighlanderIconComponent>(target);
-        EnsureComp<HighlanderComponent>(target);
-
-        SetOutfitCommand.SetOutfit(target, HighlanderGearId, EntityManager);
 
         foreach (var objective in rule.BaseObjectives)
             _mind.TryAddObjective(mindId, mind, objective);
 
         return true;
+
+
     }
     
 }

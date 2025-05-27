@@ -109,7 +109,6 @@
   name: Highlanders Kilt
   description: Functional AND dashing, a highlanders claes.
   components:
-  - type: Unremoveable
   - type: Sprite
     sprite: _Starlight/Clothing/Uniforms/Jumpsuit/Highlander.rsi
   - type: Clothing

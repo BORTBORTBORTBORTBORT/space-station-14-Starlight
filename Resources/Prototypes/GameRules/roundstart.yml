@@ -351,7 +351,7 @@
       - type: InitialInfected
       mindRoles:
       - MindRoleInitialInfected
-
+     
 - type: entity
   id: Highlander
   parent: BaseGameRule
@@ -372,10 +372,12 @@
         - AntagImmune
       briefing:
         text: Highlander-role-greeting
-        color: 7DF9FF
+        color: Plum
         sound: "/Audio/Ambience/Antag/Thunder_start.ogg"
       components:
       - type: Highlander
+      mindRoles:
+      - MindRoleHighlander
 
 
 # This rule makes the chosen players unable to get other antag rules, as a way to prevent metagaming job rolls.
