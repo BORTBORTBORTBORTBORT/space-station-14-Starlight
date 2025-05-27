@@ -1,0 +1,13 @@
+- type: entity
+  id: EffectQuickening
+  categories: [ HideSpawnMenu ]
+  name: teleportation
+  components:
+  - type: Physics
+    bodyType: Static
+    canCollide: false
+  - type: Sprite
+    sprite: _Starlight/Effects/Quickening.rsi
+    state: Lightning
+  - type: TimedDespawn
+    lifetime: 2.5
