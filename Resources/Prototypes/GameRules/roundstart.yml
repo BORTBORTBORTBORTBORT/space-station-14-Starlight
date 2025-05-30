@@ -362,7 +362,6 @@
   - type: AntagSelection
     selectionTime: IntraPlayerSpawn
     definitions:
-    - startingGear: HighlanderGear
     - prefRoles: [ Highlander ]
       max: 6
       playerRatio: 10
@@ -374,6 +373,7 @@
         text: Highlander-role-greeting
         color: Plum
         sound: "/Audio/Ambience/Antag/Thunder_start.ogg"
+      startingGear: HighlanderGear
       components:
       - type: Highlander
       mindRoles:
