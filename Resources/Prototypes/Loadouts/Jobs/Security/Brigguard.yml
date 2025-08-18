@@ -1,0 +1,138 @@
+
+#Brigguard Star
+- type: loadoutEffectGroup
+  id: BrigguardStarWorthy
+  effects:
+    - !type:JobRequirementLoadoutEffect
+      requirement:
+        !type:DepartmentTimeRequirement
+        department: Brigguard
+        time: 360000 #100 hrs
+
+# Head
+- type: loadout
+  id: BrigguardHelmet
+  equipment:
+    head: ClothingHeadHelmetBasic
+    
+- type: loadout
+  id: brigHelmetRiot
+  equipment:
+    head: ClothingHeadHelmetRiot
+
+
+- type: loadout
+  id: BrigguardHelmetStabproof
+  equipment:
+    head: ClothingHeadHelmetStabproof
+
+- type: loadout
+  id: BrigguardHelmetHeatAbsorbent
+  equipment:
+    head: ClothingHeadHelmetHeatAbsorbent
+
+- type: loadout
+  id: BrigguardHat
+  equipment:
+    head: ClothingHeadHatSecsoft
+
+- type: loadout
+  id: BrigguardBeret
+  equipment:
+    head: ClothingHeadHatBeretBrigguard
+
+
+# Jumpsuit
+- type: loadout
+  id: BrigguardJumpsuitGrey
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitSecGrey
+
+- type: loadout
+  id: BrigguardJumpskirtGrey
+  equipment:
+    jumpsuit: ClothingUniformJumpskirtSecGrey
+
+
+# Back
+- type: loadout
+  id: BrigguardBackpack
+  equipment:
+    back: ClothingBackpackBrigguard
+
+- type: loadout
+  id: BrigguardSatchel
+  equipment:
+    back: ClothingBackpackSatchelBrigguard
+
+- type: loadout
+  id: BrigguardDuffel
+  equipment:
+    back: ClothingBackpackDuffelBrigguard
+
+# Belt
+- type: loadout
+  id: BrigguardBelt
+  equipment:
+    belt: ClothingBeltBrigguardFilled
+
+- type: loadout
+  id: BrigguardWebbing
+  equipment:
+    belt: ClothingBeltBrigguardWebbingFilled
+
+# Outerclothing
+- type: loadout
+  id: BrigArmorVest
+  equipment:
+    outerClothing: ClothingOuterArmorBasic
+
+- type: loadout
+  id: brigArmorVestSlim
+  equipment:
+    outerClothing: ClothingOuterArmorBasicSlim
+
+- type: loadout
+  id: brigArmorVestStab
+  equipment:
+    outerClothing: ClothingOuterArmorStab
+
+- type: loadout
+  id: ArmourRiot
+  equipment:
+    outerClothing: ClothingOuterArmorRiot
+
+
+- type: loadout
+  id: BrigguardWintercoat
+  equipment:
+    outerClothing: ClothingOuterWinterSec
+
+# Shoes
+- type: loadout
+  id: brigCombatBoots
+  equipment:
+    shoes: ClothingShoesBootsCombatFilled
+
+- type: loadout
+  id: brigJackBoots
+  equipment:
+    shoes: ClothingShoesBootsJackFilled
+
+
+# PDA
+- type: loadout
+  id: BrigGuardPDA
+  equipment:
+    id: BrigguardPDA
+
+
+- type: loadout
+  id: BrigguardGlasses
+  equipment:
+    eyes: ClothingEyesGlassesBrigguard
+
+- type: loadout
+  id: BrigguardHud
+  equipment:
+    eyes: ClothingEyesHudBrigguard
