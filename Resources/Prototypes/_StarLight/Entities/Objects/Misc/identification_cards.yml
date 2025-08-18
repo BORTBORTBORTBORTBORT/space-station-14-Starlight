@@ -22,6 +22,18 @@
         - state: idbrigmedic
     - type: PresetIdCard
       job: Brigmedic
+      
+- type: entity
+  parent: [ IDCardStandard, BaseSecurityContraband ]
+  id: BrigguardDCard
+  name: brigguard ID card
+  components:
+    - type: Sprite
+      layers:
+        - state: default
+        - state: idbrigguard
+    - type: PresetIdCard
+      job: Brigguard
 
 - type: entity
   parent: [ IDCardStandard, BaseCentcommContraband ]

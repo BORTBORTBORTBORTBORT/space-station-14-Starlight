@@ -1,43 +1,31 @@
 - type: job
-  id: Brigmedic
-  name: job-name-brigmedic
-  description: job-description-brigmedic
-  playTimeTracker: JobBrigmedic
+  id: Brigguard
+  name: job-name-Brigguard
+  description: job-description-brigguard
+  playTimeTracker: JobBrigguard
   requirements:
     - !type:RoleTimeRequirement
       role: JobSecurityOfficer
       time: 36000 # 10 hrs
-    - !type:DepartmentTimeRequirement
-      department: Medical
-      time: 28800 # 8 hrs
-  startingGear: BrigmedicGear
-  icon: "JobIconBrigmedic"
-  supervisors: job-supervisors-hos
+  startingGear: BrigGuardGear
+  icon: "JobIconBrigGuard"
+  supervisors: job-supervisors-warden
   canBeAntag: false
   access:
   - Security
   - Brig
   - Maintenance
   - Service
-  - Medical
   - External
-  - Cryogenics
   - Brigmedic
-  - Chemistry
   special:
   - !type:AddImplantSpecial
     implants: [ MindShieldImplant ]
 
 - type: startingGear
-  id: BrigmedicGear
+  id: BrigGuardGear
   equipment:
-    ears: ClothingHeadsetBrigmedic
-    neck: ClothingNeckTieRed
-    pocket2: HandheldBrigmedicCrewMonitor
-    mask: ClothingMaskBreathMedicalSecurity
-    id: BrigmedicPDA
+    ears: ClothingHeadsetSecurity
   storage:
     back:
-    - Flash
-    - SecurityMedkit
-    - DefibrillatorBrigmedical
+      - Flash

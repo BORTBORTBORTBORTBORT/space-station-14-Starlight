@@ -7,6 +7,7 @@ job-name-miningspec = Mining Specialist
 job-name-surgeon = Surgeon
 job-name-mailtech = Mail Technician
 job-name-centcomm = CentComm Official
+job-name-Brigguard = Brig Guard
 
 job-name-abductor = Abductor
 job-title-borgi = Borgi

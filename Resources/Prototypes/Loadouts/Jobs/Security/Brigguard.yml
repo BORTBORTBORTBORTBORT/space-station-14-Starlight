@@ -6,7 +6,7 @@
     - !type:JobRequirementLoadoutEffect
       requirement:
         !type:DepartmentTimeRequirement
-        department: Brigguard
+        department: Security
         time: 360000 #100 hrs
 
 # Head
