@@ -7,6 +7,11 @@
     - !type:RoleTimeRequirement
       role: JobSecurityOfficer
       time: 72000 # 20 hrs
+    
+    - !type:RoleTimeRequirement
+      role: JobBrigguard
+      time: 14400 # 4 Hr
+      
     - !type:RoleTimeRequirement
       role: JobDetective
       time: 3600 # 1 hr

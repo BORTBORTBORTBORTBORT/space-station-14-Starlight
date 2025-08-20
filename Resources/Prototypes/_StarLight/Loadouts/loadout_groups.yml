@@ -247,3 +247,20 @@
   loadouts:
   - CombatBoots
   - HighHeelBootsFilled
+
+- type: loadoutGroup
+  id: BrigguardHead
+  name: loadout-group-brigguard-head
+  loadouts:
+    - brigHelmetRiot
+    - SecurityHelmet
+    - SecurityHelmetPlate
+    - SecurityHelmetStabproof
+    - SecurityHelmetHeatAbsorbent
+
+- type: loadoutGroup
+  id: Brigguard-armour
+  name: loadout-group-brigguard-armour
+  loadouts:
+    - CombatBoots
+    - HighHeelBootsFilled

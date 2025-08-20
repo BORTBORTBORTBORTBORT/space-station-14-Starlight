@@ -116,3 +116,15 @@
     - Trinkets
     - SecurityStar
     - GroupSpeciesBreathToolSecurity
+      
+- type: roleLoadout
+  id: JobBrigGuard
+  groups:
+    - SecurityEyewear
+    - Brigguardarmour
+    - SecurityShoes
+    - SecurityNonLethalWeapon
+    - SurvivalSecurity
+    - Trinkets
+    - SecurityStar
+    - GroupSpeciesBreathToolSecurity

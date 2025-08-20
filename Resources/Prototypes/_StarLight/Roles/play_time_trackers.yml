@@ -18,6 +18,9 @@
 
 - type: playTimeTracker
   id: JobBlueShield
+  
+- type: playTimeTracker
+  id: JobBrigguard
 
 - type: playTimeTracker
   id: JobConsortiumBlueShield

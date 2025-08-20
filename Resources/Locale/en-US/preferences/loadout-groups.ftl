@@ -165,15 +165,7 @@ loadout-group-security-id = Security ID
 loadout-group-security-weapon = Security Weapon
 loadout-group-security-eyewear = Security eyewear
 
-loadout-group-brigguard-head = Brigguard head
-loadout-group-brigguard-jumpsuit = Brigguard jumpsuit
-loadout-group-brigguard-backpack = Brigguard backpack
-loadout-group-brigguard-belt = Brigguard Belt
-loadout-group-brigguard-outerclothing = Brigguard outer clothing
-loadout-group-brigguard-shoes = Brigguard shoes
-loadout-group-brigguard-id = Brigguard ID
-loadout-group-brigguard-weapon = Brigguard Weapon
-loadout-group-sbrigguard-eyewear = Brigguard eyewear
+
 
 loadout-group-brigmedic-head = Brigmedic head
 loadout-group-brigmedic-jumpsuit = Brigmedic jumpsuit
