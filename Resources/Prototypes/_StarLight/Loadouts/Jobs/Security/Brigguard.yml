@@ -1,14 +1,4 @@
 
-#Brigguard Star
-- type: loadoutEffectGroup
-  id: BrigguardStarWorthy
-  effects:
-    - !type:JobRequirementLoadoutEffect
-      requirement:
-        !type:DepartmentTimeRequirement
-        department: Security
-        time: 360000 #100 hrs
-
 # Head
 - type: loadout
   id: BrigguardHelmet
@@ -26,10 +16,6 @@
   equipment:
     head: ClothingHeadHelmetStabproof
 
-- type: loadout
-  id: BrigguardHelmetHeatAbsorbent
-  equipment:
-    head: ClothingHeadHelmetHeatAbsorbent
 
 - type: loadout
   id: BrigguardHat
@@ -39,7 +25,7 @@
 - type: loadout
   id: BrigguardBeret
   equipment:
-    head: ClothingHeadHatBeretBrigguard
+    head: ClothingHeadHatBeretSecurity
 
 
 # Jumpsuit
@@ -53,33 +39,32 @@
   equipment:
     jumpsuit: ClothingUniformJumpskirtSecGrey
 
-
 # Back
 - type: loadout
   id: BrigguardBackpack
   equipment:
-    back: ClothingBackpackBrigguard
+    back: ClothingBackpackSecurity
 
 - type: loadout
   id: BrigguardSatchel
   equipment:
-    back: ClothingBackpackSatchelBrigguard
+    back: ClothingBackpackSatchelSecurity
 
 - type: loadout
   id: BrigguardDuffel
   equipment:
-    back: ClothingBackpackDuffelBrigguard
+    back: ClothingBackpackDuffelSecurity
 
 # Belt
 - type: loadout
   id: BrigguardBelt
   equipment:
-    belt: ClothingBeltBrigguardFilled
+    belt: ClothingBeltSecurityFilled
 
 - type: loadout
   id: BrigguardWebbing
   equipment:
-    belt: ClothingBeltBrigguardWebbingFilled
+    belt: ClothingBeltSecurityWebbingFilled
 
 # Outerclothing
 - type: loadout
@@ -130,9 +115,9 @@
 - type: loadout
   id: BrigguardGlasses
   equipment:
-    eyes: ClothingEyesGlassesBrigguard
+    eyes: ClothingEyesGlassesSecurity
 
 - type: loadout
   id: BrigguardHud
   equipment:
-    eyes: ClothingEyesHudBrigguard
+    eyes: ClothingEyesHudSecurity

@@ -1163,8 +1163,6 @@
   - SecurityHelmet
   - CorpsmanBeret #Starlight
 
-    
-
 - type: loadoutGroup
   id: BrigmedicJumpsuit
   name: loadout-group-brigmedic-jumpsuit

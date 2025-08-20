@@ -252,15 +252,25 @@
   id: BrigguardHead
   name: loadout-group-brigguard-head
   loadouts:
-    - brigHelmetRiot
-    - SecurityHelmet
-    - SecurityHelmetPlate
-    - SecurityHelmetStabproof
-    - SecurityHelmetHeatAbsorbent
+  - brigHelmetRiot
+  - SecurityHelmet
+  - SecurityHelmetPlate
+  - SecurityHelmetStabproof
+
 
 - type: loadoutGroup
-  id: Brigguard-armour
+  id: BrigguardJumpsuit
+  name: loadout-group-brigguard-Jumpsuit
+  loadouts:
+  - BrigguardJumpsuitGrey
+  - SecurityJumpskirtGrey
+
+- type: loadoutGroup
+  id: Brigguardarmour
   name: loadout-group-brigguard-armour
   loadouts:
-    - CombatBoots
-    - HighHeelBootsFilled
+  - ArmorVest
+  - ArmorVestSlim
+  - ArmorVestStab
+  - SecurityOfficerWintercoat
+  - ArmourRiot
