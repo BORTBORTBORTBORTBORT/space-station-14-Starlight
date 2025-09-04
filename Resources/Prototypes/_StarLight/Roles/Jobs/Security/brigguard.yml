@@ -1,14 +1,14 @@
 - type: job
-  id: Brigguard
-  name: job-name-Brigguard
-  description: job-description-brigguard
-  playTimeTracker: JobBrigguard
+  id: Dutyofficer
+  name: job-name-Dutyofficer
+  description: job-description-Dutyofficer
+  playTimeTracker: JobDutyofficer
   requirements:
     - !type:RoleTimeRequirement
       role: JobSecurityOfficer
       time: 36000 # 10 hrs
-  startingGear: BrigGuardGear
-  icon: "JobIconBrigGuard"
+  startingGear: DutyofficerGear
+  icon: "JobIconDutyofficer"
   supervisors: job-supervisors-warden
   canBeAntag: false
   access:
@@ -23,7 +23,7 @@
     implants: [ MindShieldImplant ]
 
 - type: startingGear
-  id: BrigGuardGear
+  id: DutyofficerGear
   equipment:
     ears: ClothingHeadsetSecurity
   storage:

@@ -249,28 +249,40 @@
   - HighHeelBootsFilled
 
 - type: loadoutGroup
-  id: BrigguardHead
-  name: loadout-group-brigguard-head
+  id: DutyofficerHead
+  name: loadout-group-dutyofficer-head
   loadouts:
   - brigHelmetRiot
   - SecurityHelmet
   - SecurityHelmetPlate
   - SecurityHelmetStabproof
 
+- type: loadoutGroup
+  id: DutyofficerBelt
+  name: loadout-group-dutyofficer-belt
+  loadouts:
+    - DutyofficerBelt
+    - DutyofficerWebbing
 
 - type: loadoutGroup
-  id: BrigguardJumpsuit
-  name: loadout-group-brigguard-Jumpsuit
+  id: DutyofficerJumpsuit
+  name: loadout-group-dutyofficer-Jumpsuit
   loadouts:
-  - BrigguardJumpsuitGrey
+  - DutyofficerJumpsuitGrey
   - SecurityJumpskirtGrey
 
 - type: loadoutGroup
-  id: Brigguardarmour
-  name: loadout-group-brigguard-armour
+  id: Dutyofficerarmour
+  name: loadout-group-dutyofficer-armour
   loadouts:
   - ArmorVest
   - ArmorVestSlim
   - ArmorVestStab
   - SecurityOfficerWintercoat
   - ArmourRiot
+
+- type: loadoutGroup
+  id: DutyofficerPDA
+  name: loadout-group-dutyofficer-id
+  loadouts:
+    - DutyofficerPDA

@@ -262,3 +262,29 @@
   - type: Tag #  Ignore Chameleon tags
     tags:
     - DoorBumpOpener
+
+- type: entity
+  parent: BaseSecurityPDA
+  id: DutyofficerPDA
+  name: Duty Officer PDA
+  description: They keys to the kingdom, or the keys to freedom?
+  components:
+    - type: Pda
+      id: DutyofficerIDCard
+    - type: Appearance
+      appearanceDataInit:
+        enum.PdaVisuals.PdaType:
+          !type:String
+          pda-security
+    - type: PdaBorderColor
+      borderColor: "#A32D26"
+    - type: Icon
+      state: pda-Dutyofficer
+    - type: CartridgeLoader
+      uiKey: enum.PdaUiKey.Key
+      preinstalled:
+        - CrewManifestCartridge
+        - NotekeeperCartridge
+        - NanoTaskCartridge
+        - NewsReaderCartridge
+        - WantedListCartridge

@@ -25,15 +25,15 @@
       
 - type: entity
   parent: [ IDCardStandard, BaseSecurityContraband ]
-  id: BrigguardDCard
-  name: brigguard ID card
+  id: DutyofficerIDCard
+  name: Dutyofficer ID card
   components:
     - type: Sprite
       layers:
         - state: default
-        - state: idbrigguard
+        - state: idDutyofficer
     - type: PresetIdCard
-      job: Brigguard
+      job: Dutyofficer
 
 - type: entity
   parent: [ IDCardStandard, BaseCentcommContraband ]

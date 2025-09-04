@@ -35,15 +35,15 @@ loadout-group-security-non-lethal-weapon = Security Non-Lethal Weapon
 loadout-group-security-sidearm = Security Sidearm
 loadout-group-detective-shoes = Detective shoes
 
-loadout-group-brigguard-head = Brigguard head
-loadout-group-brigguard-jumpsuit = Brigguard jumpsuit
-loadout-group-brigguard-backpack = Brigguard backpack
-loadout-group-brigguard-belt = Brigguard Belt
-loadout-group-brigguard-outerclothing = Brigguard outer clothing
-loadout-group-brigguard-shoes = Brigguard shoes
-loadout-group-brigguard-id = Brigguard ID
-loadout-group-brigguard-weapon = Brigguard Weapon
-loadout-group-sbrigguard-eyewear = Brigguard eyewear
+loadout-group-duty-officer-head = Dutyofficer head
+loadout-group-duty-officer-jumpsuit = Dutyofficer jumpsuit
+loadout-group-duty-officer-backpack = Dutyofficer backpack
+loadout-group-duty-officer-belt = Dutyofficer Belt
+loadout-group-duty-officer-outerclothing = Dutyofficer outer clothing
+loadout-group-duty-officer-shoes = Dutyofficer shoes
+loadout-group-duty-officer-id = Dutyofficer ID
+loadout-group-duty-officer-weapon = Dutyofficer Weapon
+loadout-group-duty-officer-eyewear = Dutyofficer eyewear
 
 # Law
 loadout-group-magistrate-shoes = Magistrate shoes

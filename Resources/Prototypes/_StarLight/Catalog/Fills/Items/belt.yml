@@ -179,3 +179,36 @@
     - id: CombatMedipen
     - id: CrowbarRed
     - id: Binoculars
+
+- type: entityTable
+  id: BeltDutyofficerEntityTable
+  table: !type:AllSelector
+    children:
+    - id: Stunbaton
+    - id: Handcuffs
+    - id: HoloprojectorSecurity
+    - id: RadioHandheldSecurity
+    - id: Zipties
+    - id: Zipties
+    - id: TearGasGrenade
+        
+
+- type: entity
+  id: ClothingBeltDutyofficerFilled
+  parent: ClothingBeltSecurity
+  suffix: Filled
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:NestedSelector
+          tableId: BeltDutyofficerEntityTable
+
+- type: entity
+  id: ClothingBeltDutyofficerWebbingFilled
+  parent: ClothingBeltSecurityWebbing
+  suffix: Filled
+  components:
+    - type: EntityTableContainerFill
+      containers:
+        storagebase: !type:NestedSelector
+          tableId: BeltDutyofficerEntityTable

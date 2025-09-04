@@ -160,13 +160,10 @@
     - !type:DepartmentTimeRequirement
       department: Medical
       time: 28800 # 8 hrs
-    Brigguard:
+    Dutyofficer:
     - !type:RoleTimeRequirement
       role: JobSecurityOfficer
       time: 36000 # 10 hrs
-    - !type:DepartmentTimeRequirement
-      department: Security
-      time: 40000 # 8 hrs
     StationAi:
     - !type:OverallPlaytimeRequirement
       time: 0

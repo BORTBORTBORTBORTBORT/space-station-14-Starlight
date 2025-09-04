@@ -118,13 +118,16 @@
     - GroupSpeciesBreathToolSecurity
       
 - type: roleLoadout
-  id: JobBrigguard
+  id: JobDutyofficer
   groups:
     - SecurityEyewear
-    - BrigguardHead
-    - BrigguardJumpsuit
-    - Brigguardarmour
+    - DutyofficerHead
+    - DutyofficerJumpsuit
+    - Dutyofficerarmour
     - SecurityShoes
+    - SecurityNonLethalWeapon
+    - DutyofficerBelt
+    - DutyofficerPDA
     - SurvivalSecurity
     - Trinkets
     - SecurityStar

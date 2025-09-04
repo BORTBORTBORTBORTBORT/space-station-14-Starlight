@@ -105,3 +105,19 @@
       - state: green
       - state: surgeon
       - state: jobicon
+
+
+- type: entity #starlight
+  id: SpawnPointDutyofficer
+  parent: SpawnPointJobBase
+  name: Dutyofficer
+  components:
+    - type: SpawnPoint
+      job_id: Dutyofficer
+    - type: Sprite
+      sprite: _Starlight/Markers/jobs.rsi
+      layers:
+        - state: green
+        - state: duty_officer
+        - state: jobicon
+

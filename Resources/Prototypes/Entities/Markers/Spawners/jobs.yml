@@ -474,18 +474,6 @@
       - state: green
       - state: security_officer
 
-- type: entity #starlight
-  id: SpawnPointBrigGuard
-  parent: SpawnPointJobBase
-  name: BrigGuard
-  components:
-    - type: SpawnPoint
-      job_id: BrigGuard
-    - type: Sprite
-      layers:
-        - state: green
-        - state: brig_guard
-
 - type: entity
   id: SpawnPointDetective
   parent: SpawnPointJobBase
